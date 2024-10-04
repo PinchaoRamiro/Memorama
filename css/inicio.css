@@ -1,0 +1,132 @@
+
+img{
+  user-select: none;
+}
+
+input{
+  display: none;
+}
+
+header > div{
+  width: 20%;
+}
+
+header > h1 {
+  font-size: 20px; 
+  color: #f30000;
+}
+
+header button{
+  font-family: cursive,'Arial Narrow', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  height: 110%;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 150%;
+  border:none;
+  background: linear-gradient(#101fa1, #0e2446);
+  color:#f30000;
+  margin-right: 10px;
+}
+
+.button-container {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 125%;
+    border: 3px solid #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button-container:hover {
+    border-color: #0dfa9f;
+    color: #0dfa9f;
+  }
+
+  .input-checkbox {
+    display: none;
+  }
+
+  .input-checkbox:checked + .button-container {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 18px; /* Cambiar tamaño de fuente cuando se chekea */
+    color: #5c5c5c; /* Cambiar color de texto cuando se chekea */
+  }
+
+
+  .button-container{
+    height: 100px;
+    background: linear-gradient(#380205, #757a26);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 130%;
+    font-weight: 900;
+    color: #205ed1;
+    margin-top: 100px; 
+    z-index: 30;
+  }
+
+  .input-checkbox:checked ~ .overlay   {
+    visibility: hidden;
+  }
+
+
+  .input-checkbox:checked ~ .button-container{
+    display:none;
+  }
+
+  main {
+    background: linear-gradient(#000000af, #8f1a1a);
+  }
+
+
+  .button-container{
+    position: absolute;
+    inset: 0;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#380205, #757a26);
+  }
+
+
+  .card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  /*Parte que de las cartas en posicion */
+  .card .Cardfront,
+  .card .Cardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .Cardfront {
+    background-color: #333;
+    transform: rotateY(0deg);
+    background: linear-gradient(#380205, #97182d);
+  }
+  
+  .card .Cardback {
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+  }
+  
+  
